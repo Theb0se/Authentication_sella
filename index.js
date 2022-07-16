@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  alert("loaded");
   $("#form_btn").click(function (event) {
     event.preventDefault();
 
