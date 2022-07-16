@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Authentication</title>
+    <link rel="shortcut icon" href="./asset/favicon.ico" type="image/x-icon">
+
+    <!-- jqeury -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awasome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css"
+      integrity="sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="/index.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <!-- Header -->
+      <div class="header">
+        <div class="logo">
+          <a href="/">
+            <img src="./asset/logo_sellait.png" alt="sellat.png" />
+          </a>
+        </div>
+        <div class="header-link">
+          <a href="#"
+            >Stato richieste
+            <span style="padding-left: 5px"
+              ><i class="fa-solid fa-right-long"></i></span
+          ></a>
+        </div>
+      </div>
+
+      <!-- Descrption -->
+
+      <div class="discription">
+        <div class="desc-container">
+          <h2>
+            <span>Accedi</span> <span class="span">ai servizi online</span>
+          </h2>
+          <p>Compila i campi per proseguire</p>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="form">
+        <div id="form_email">
+          <form id="form" method="post">
+            <div class="email">
+              <p>Codice cliente o username</p>
+              <input type="email" name="email" id="email" autofocus required />
+              <span id="error_data" class="dataRequired"></span>
+            </div>
+            <div class="password">
+              <p>PIN o password</p>
+              <input type="password" name="" id="password" />
+              <span id="error_data2" class="dataRequired"></span>
+              <img
+                src="./asset/show_eye_icon.svg"
+                alt=""
+                class="showimg"
+                id="showbtn"
+              />
+            </div>
+            <div class="helpcenter">
+              <a href="">Hai dimenticato i tuoi codici?</a>
+            </div>
+            <div class="button">
+              <button id="form_btn">CONFERMA</button>
+            </div>
+          </form>
+        </div>
+
+        <div id="form_number" class="form_number">
+          <form id="form_number" method="post">
+            <div class="number" id="number">
+              <p>Phone number</p>
+              <input type="text" name="" id="number_input" />
+              <span id="error_data3" class="dataRequired"></span>
+            </div>
+            <div class="button">
+              <button id="form-number_btn">CONFERMA</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="footer">
+        <p>Primo accesso?</p>
+        <a href=""><span>Richiedi codici</span> - <span>Attiva codici</span></a>
+      </div>
+    </div>
+  </body>
+</html>
